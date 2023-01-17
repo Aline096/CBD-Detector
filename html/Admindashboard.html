@@ -13,7 +13,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles/d-styles.css">
-    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
   </head>
   <body>
     <div class="grid-container">
@@ -38,24 +37,24 @@
       <aside id="sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <span class="material-icons-outlined"></span><a href="../index.html">CBD Detector</a>
+            <span class="material-icons-outlined"></span><a href="../index.html">CBD Detector</a> 
           </div>
           <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
 
         <ul class="sidebar-list">
           <li class="sidebar-list-item">
-            <a href="./Admindashboard.html">
+            <a href="#">
               <span class="material-icons-outlined">dashboard</span> Dashboard
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="./images.html" >
+            <a href="./images.html">
               <span class="material-icons-outlined">inventory_2</span> Images
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="./diseases.html" >
+            <a href="./diseases.html">
               <span class="material-icons-outlined">category</span> Diseases
             </a>
           </li>
@@ -71,39 +70,50 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-          <h2>List of Farmers</h2>
+          <h2>DASHBOARD</h2>
         </div>
 
-        <div class="main-cards-disease">
-                <div class="title">
-                    <h2>New Farmers</h2>
-                </div>
-                <table>
-                    <tr>
-                        <th>Profile</th>
-                        <th>Name</th>
-                        <th>Sector</th>
-                        
-                    </tr>
-                    <tr>
-                        <td><img src="user.png" alt=""></td>
-                        <td>RUKUNDO Jean</td>
-                        <td>Gicumbi</td>
-                        
-                        
-                    </tr>
-                    <tr>
-                        <td><img src="user.png" alt=""></td>
-                        <td>RUKUNDO Jean</td>
-                        <td>Rulindo</td>
-                        
-                        
-                    </tr>
+        <div class="main-cards">
 
-                </table>
+          <div class="card">
+            <div class="card-inner">
+              <h3>Images</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>249</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Diseases</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>25</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Farmers</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1500</h1>
+          </div>
+
         </div>
 
-       
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top Disease</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">District and Coffee berry disease</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
       </main>
       <!-- End Main -->
 
