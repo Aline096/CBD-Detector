@@ -1,14 +1,23 @@
 @import url('https://fonts.cdnfonts.com/css/im-fell-double-pica-sc');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body{
+   min-height: 100vh;
+   width: 100%;
+   background: #EEECEB;
+ }
+ footer{
+   /* position: fixed; */
+   background: rgba(58, 95, 11, 0.8);
+   width: 100%;
+   bottom: 0;
+   left: 0;
+ }
 
-body {
-    min-height: 100vh;
-}
 
 a {
     text-decoration: none;
@@ -22,6 +31,17 @@ button{
     background: none;
     border: none;
     color: #FFFFFF;
+}
+
+.container{
+    height: 720px;
+    background: rgba(58, 95, 11, 0.1);;
+    padding: 5px 20px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /* Menu-navbar */
@@ -38,11 +58,11 @@ button{
     padding: 5px 20px;
     width: 100%;
 }
-#header .logo{
+.logo{
 
     font-family: 'IM FELL Double Pica SC', sans-serif;
     font-size: 30px;
-    width: 50%;
+    /* width: 50%; */
 }
 #header .header-item{
     float: right;
@@ -57,7 +77,7 @@ button{
     
 }
 
-#body .hero{
+.hero{
     height: 1024px;
     background:linear-gradient(rgba(6, 6, 6, 0.53), rgba(28, 27, 27, 0.8)), url("../images/background.jpg");
     background-size: cover;
@@ -69,9 +89,9 @@ button{
     gap: 1rem;
   }
 
-#body .welcome, .upload, .small{
+/* #body .welcome, .upload, .small{
     color: #FFFFFF;
-}
+} */
 
 #body span{
 font-weight: 500;
@@ -81,7 +101,7 @@ text-align: center;
 display: flex;
 justify-content:center;  
 }  
-#body .btn{
+.btn{
     border: none;
     padding: 10px 22px;
     border-radius: 12px;
@@ -146,7 +166,7 @@ justify-content:center;
 
 
 /* DISCOVER  */
-#body .discover-items{
+ .discover-items{
     height: 1024px;
     background: rgba(58, 95, 11, 0.5);
     padding: 5px 20px;
@@ -156,7 +176,7 @@ justify-content:center;
     gap: 5rem;
     /* justify-content: space-between */
 }
-#body .discover-items .discover-item{
+.discover-items .discover-item{
     width:50%;
     max-height:1024px ;
     display: flex;
@@ -199,3 +219,215 @@ justify-content:center;
 
 
 /* Get in Touch */
+#body .getintouch{
+    height: 720px;
+    background: rgba(58, 95, 11, 0.1);;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+#body .getintouch-header{
+    padding: 5px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.getintouch-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem
+}
+
+#body .getintouch-item {
+   padding: 10px 5px;
+   top:30px;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+    
+ }
+
+ .col{
+    display: flex;
+
+ }
+
+ /* Footer */
+
+
+ footer .content{
+   max-width: 1250px;
+   margin: auto;
+   padding: 30px 40px 40px 40px;
+ }
+ footer .content .top{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .content .top .logo-details{
+   color: #fff;
+   /* font-size: 30px; */
+ }
+ .content .top .media-icons{
+   display: flex;
+ }
+ .content .top .media-icons a{
+   height: 40px;
+   width: 40px;
+   margin: 0 8px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+   color: #fff;
+   font-size: 17px;
+   text-decoration: none;
+   transition: all 0.4s ease;
+ }
+ .top .media-icons a:nth-child(1){
+   background: #4267B2;
+ }
+ .top .media-icons a:nth-child(1):hover{
+   color: #4267B2;
+   background: #fff;
+ }
+ .top .media-icons a:nth-child(2){
+   background: #1DA1F2;
+ }
+ .top .media-icons a:nth-child(2):hover{
+   color: #1DA1F2;
+   background: #fff;
+ }
+ .top .media-icons a:nth-child(3){
+   background: #E1306C;
+ }
+ .top .media-icons a:nth-child(3):hover{
+   color: #E1306C;
+   background: #fff;
+ }
+ .top .media-icons a:nth-child(4){
+   background: #0077B5;
+ }
+ .top .media-icons a:nth-child(4):hover{
+   color: #0077B5;
+   background: #fff;
+ }
+ .top .media-icons a:nth-child(5){
+   background: #FF0000;
+ }
+ .top .media-icons a:nth-child(5):hover{
+   color: #FF0000;
+   background: #fff;
+ }
+ @media (max-width: 900px) {
+
+    .header-item .mission-items{
+        flex-wrap: wrap;
+    }
+   footer .content .link-boxes{
+     flex-wrap: wrap;
+   }
+   footer .content .link-boxes .input-box{
+     width: 40%;
+     margin-top: 10px;
+   }
+   .upload .description .uploadedimg{
+    flex-wrap: wrap;
+   }
+ }
+ @media (max-width: 700px){
+   footer{
+     position: relative;
+   }
+   .content .top .logo-details{
+     font-size: 26px;
+   }
+   .content .top .media-icons a{
+     height: 35px;
+     width: 35px;
+     font-size: 14px;
+     line-height: 35px;
+   }
+   footer .content .link-boxes .box{
+     width: calc(100% / 3 - 10px);
+   }
+   footer .content .link-boxes .input-box{
+     width: 60%;
+   }
+   .bottom-details .bottom_text span,
+   .bottom-details .bottom_text a{
+     font-size: 12px;
+   }
+ }
+ @media (max-width: 520px){
+   footer::before{
+     top: 145px;
+   }
+   footer .content .top{
+     flex-direction: column;
+   }
+   .content .top .media-icons{
+     margin-top: 16px;
+   }
+   footer .content .link-boxes .box{
+     width: calc(100% / 2 - 10px);
+   }
+   footer .content .link-boxes .input-box{
+     width: 100%;
+   }
+ }
+ 
+
+/* End Footer */
+
+/* Upload */
+.upload{
+    height: 1024px;
+    background: rgba(58, 95, 11, 0.5);
+    padding: 5px 20px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.uploaddiv{
+    padding: 5px 20px;
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+.dragdrop{
+    background: rgba(58, 95, 11, 0.5);
+    padding: 10px 20px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description{
+  height: 720px;
+  width: 100%; 
+  padding: 10px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.disease{
+  width: 50%;
+  align-items: center;
+}
+.uploadedimg{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  align-items: center;
+}
